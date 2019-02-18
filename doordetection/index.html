@@ -27,20 +27,20 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.4">
     
     
       
-        <title>Alex's Door System Documentation</title>
+        <title>Door Detection - Alex's Door System Documentation</title>
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application-709eec9410.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-709eec9410.css">
       
     
     
-      <script src="./assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
       
@@ -69,7 +69,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="Alex's Door System Documentation" class="md-header-nav__button md-logo">
+        <a href=".." title="Alex's Door System Documentation" class="md-header-nav__button md-logo">
           
             <i class="md-icon">home</i>
           
@@ -84,7 +84,7 @@
             
               
             
-            Welcome
+            Door Detection
           
         </span>
       </div>
@@ -146,20 +146,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="." title="Welcome" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
       Welcome
     </a>
-    
   </li>
 
     
@@ -169,7 +160,7 @@
 
 
   <li class="md-nav__item">
-    <a href="liteversion/" title="Lite Version" class="md-nav__link">
+    <a href="../liteversion/" title="Lite Version" class="md-nav__link">
       Lite Version
     </a>
   </li>
@@ -181,7 +172,7 @@
 
 
   <li class="md-nav__item">
-    <a href="quickstart/" title="Quick-Start" class="md-nav__link">
+    <a href="../quickstart/" title="Quick-Start" class="md-nav__link">
       Quick-Start
     </a>
   </li>
@@ -193,7 +184,7 @@
 
 
   <li class="md-nav__item">
-    <a href="doorrotation/" title="Rotations" class="md-nav__link">
+    <a href="../doorrotation/" title="Rotations" class="md-nav__link">
       Rotations
     </a>
   </li>
@@ -205,7 +196,7 @@
 
 
   <li class="md-nav__item">
-    <a href="doortrigger/" title="Trigger Zones" class="md-nav__link">
+    <a href="../doortrigger/" title="Trigger Zones" class="md-nav__link">
       Trigger Zones
     </a>
   </li>
@@ -215,11 +206,47 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="doordetection/" title="Door Detection" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Door Detection
+      </label>
+    
+    <a href="./" title="Door Detection" class="md-nav__link md-nav__link--active">
       Door Detection
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#detection-component" title="Detection Component" class="md-nav__link">
+    Detection Component
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -229,7 +256,7 @@
 
 
   <li class="md-nav__item">
-    <a href="doorsound/" title="Door Sound" class="md-nav__link">
+    <a href="../doorsound/" title="Door Sound" class="md-nav__link">
       Door Sound
     </a>
   </li>
@@ -241,7 +268,7 @@
 
 
   <li class="md-nav__item">
-    <a href="support/" title="Support and Contact" class="md-nav__link">
+    <a href="../support/" title="Support and Contact" class="md-nav__link">
       Support and Contact
     </a>
   </li>
@@ -264,6 +291,20 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#detection-component" title="Detection Component" class="md-nav__link">
+    Detection Component
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -275,17 +316,42 @@
               
                 
                 
-                <h1 id="welcome"><strong>Welcome</strong></h1>
-<p>Hello and welcome to the documentation of the Doors+ asset!
-Here you'll find more information
-about every aspect of the tool as well as a Quick-Start guide and a Support section.</p>
-<div class="admonition info">
-<p class="admonition-title">Useful Links</p>
-<p><a href="https://alexdoorsystem.github.io/quickstart/"><strong>Quick-Start Guide</strong></a></p>
-<p><a href="https://alexdoorsystem.github.io/support/"><strong>Support and Contact</strong></a></p>
-<p><a href="https://www.assetstore.unity3d.com/en/#!/account/downloads/search=Doors"><strong>Write a Review</strong></a></p>
+                <h1 id="door-detection"><strong>Door Detection</strong></h1>
+<p>When setting up the doors in your game, you should add the Door Detection component to your player. This component
+allows the player to detect doors in your scene. It ray-casts continuously and checks what objects are in front of him/her.</p>
+<h2 id="detection-component"><strong>Detection Component</strong></h2>
+<p>In the detection component, you have a reach variable. This variable determines how close to the door the player needs to be in order
+to be able to move it. You can display a visualization of that 'reach' in your scene if you'd like to.</p>
+<p><img alt="Trigger Zones" src="../img/detectioncomponent.png" /></p>
+<p>There are also some slots where you can put text-prefabs that will be shown whenever a certain stage of the rotation is reached.
+For example you could display 'Press "E" to open' whenever your player is looking at a door. You can also leave these slots
+empty.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure the 'Reach' variable is not set to zero.'.</p>
 </div>
-<p><input type="text" id="name" name="name"/></p>
+<table>
+<thead>
+<tr>
+<th align="left">Prefab</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Looking at</td>
+<td align="left">Does the object that entered the trigger zone have a certain tag?</td>
+</tr>
+<tr>
+<td align="left">In Zone</td>
+<td align="left">Does the object that entered the trigger zone has a certain name?</td>
+</tr>
+<tr>
+<td align="left">Chrosshair</td>
+<td align="left">Is the player looking at a certain object?</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -304,14 +370,28 @@ about every aspect of the tool as well as a Quick-Start guide and a Support sect
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
+          <a href="../doortrigger/" title="Trigger Zones" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Trigger Zones
+              </span>
+            </div>
+          </a>
         
-          <a href="liteversion/" title="Lite Version" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../doorsound/" title="Door Sound" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Lite Version
+                Door Sound
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -341,9 +421,9 @@ about every aspect of the tool as well as a Quick-Start guide and a Support sect
       
     </div>
     
-      <script src="./assets/javascripts/application-8e4952e681.js"></script>
+      <script src="../assets/javascripts/application-8e4952e681.js"></script>
       
-      <script>app.initialize({version:"0.17.1",url:{base:"."}})</script>
+      <script>app.initialize({version:"0.17.1",url:{base:".."}})</script>
       
     
     

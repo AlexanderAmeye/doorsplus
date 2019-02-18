@@ -27,20 +27,20 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.4">
     
     
       
-        <title>Alex's Door System Documentation</title>
+        <title>Trigger Zones - Alex's Door System Documentation</title>
       
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application-709eec9410.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-709eec9410.css">
       
     
     
-      <script src="./assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
       
@@ -69,7 +69,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="Alex's Door System Documentation" class="md-header-nav__button md-logo">
+        <a href=".." title="Alex's Door System Documentation" class="md-header-nav__button md-logo">
           
             <i class="md-icon">home</i>
           
@@ -84,7 +84,7 @@
             
               
             
-            Welcome
+            Trigger Zones
           
         </span>
       </div>
@@ -146,20 +146,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="." title="Welcome" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="Welcome" class="md-nav__link">
       Welcome
     </a>
-    
   </li>
 
     
@@ -169,7 +160,7 @@
 
 
   <li class="md-nav__item">
-    <a href="liteversion/" title="Lite Version" class="md-nav__link">
+    <a href="../liteversion/" title="Lite Version" class="md-nav__link">
       Lite Version
     </a>
   </li>
@@ -181,7 +172,7 @@
 
 
   <li class="md-nav__item">
-    <a href="quickstart/" title="Quick-Start" class="md-nav__link">
+    <a href="../quickstart/" title="Quick-Start" class="md-nav__link">
       Quick-Start
     </a>
   </li>
@@ -193,7 +184,7 @@
 
 
   <li class="md-nav__item">
-    <a href="doorrotation/" title="Rotations" class="md-nav__link">
+    <a href="../doorrotation/" title="Rotations" class="md-nav__link">
       Rotations
     </a>
   </li>
@@ -203,11 +194,54 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="doortrigger/" title="Trigger Zones" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Trigger Zones
+      </label>
+    
+    <a href="./" title="Trigger Zones" class="md-nav__link md-nav__link--active">
       Trigger Zones
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-component" title="Trigger Component" class="md-nav__link">
+    Trigger Component
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-requirements" title="Player Requirements" class="md-nav__link">
+    Player Requirements
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -217,7 +251,7 @@
 
 
   <li class="md-nav__item">
-    <a href="doordetection/" title="Door Detection" class="md-nav__link">
+    <a href="../doordetection/" title="Door Detection" class="md-nav__link">
       Door Detection
     </a>
   </li>
@@ -229,7 +263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="doorsound/" title="Door Sound" class="md-nav__link">
+    <a href="../doorsound/" title="Door Sound" class="md-nav__link">
       Door Sound
     </a>
   </li>
@@ -241,7 +275,7 @@
 
 
   <li class="md-nav__item">
-    <a href="support/" title="Support and Contact" class="md-nav__link">
+    <a href="../support/" title="Support and Contact" class="md-nav__link">
       Support and Contact
     </a>
   </li>
@@ -264,6 +298,27 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-component" title="Trigger Component" class="md-nav__link">
+    Trigger Component
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-requirements" title="Player Requirements" class="md-nav__link">
+    Player Requirements
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -275,17 +330,62 @@
               
                 
                 
-                <h1 id="welcome"><strong>Welcome</strong></h1>
-<p>Hello and welcome to the documentation of the Doors+ asset!
-Here you'll find more information
-about every aspect of the tool as well as a Quick-Start guide and a Support section.</p>
-<div class="admonition info">
-<p class="admonition-title">Useful Links</p>
-<p><a href="https://alexdoorsystem.github.io/quickstart/"><strong>Quick-Start Guide</strong></a></p>
-<p><a href="https://alexdoorsystem.github.io/support/"><strong>Support and Contact</strong></a></p>
-<p><a href="https://www.assetstore.unity3d.com/en/#!/account/downloads/search=Doors"><strong>Write a Review</strong></a></p>
-</div>
-<p><input type="text" id="name" name="name"/></p>
+                <h1 id="trigger-zones"><strong>Trigger Zones</strong></h1>
+<p>This door system heavily relies on trigger zones to create proper player-door interactions.
+Trigger zones are drawn as colored volumes (boxes or spheres) in the scene. You can position/rotate/scale them however you want and change
+their visual appearance.</p>
+<p><img alt="Trigger Zones" src="../img/trigger_zones.jpg" /></p>
+<p>Every trigger you see, is connected to a rotation block of a door. Looped and swing rotations both have 2 trigger zones. Single rotations have 1 trigger zone.
+Trigger zones will automatically be added to your scene/hierarchy whenever you create a rotation. You also have the option to
+add multiple trigger zones that control the same rotation.</p>
+<p><img alt="Trigger Zone Hierarchy" src="../img/trigger_zone_hierarchy.png" /></p>
+<h2 id="trigger-component"><strong>Trigger Component</strong></h2>
+<p>Every trigger zone has a 'Door Trigger' component attached to it. This component allows you to control how the trigger zone behaves.
+Trigger zones continuously check a certain set of conditions. If all conditions are met, the trigger zone sends a signal to the door, and a rotation will take place.</p>
+<p><img alt="Trigger Zones" src="../img/trigger_script.png" /></p>
+<p>You can set what the zones look for in order to allow a rotation.</p>
+<h2 id="player-requirements"><strong>Player Requirements</strong></h2>
+<table>
+<thead>
+<tr>
+<th align="left">Requirement</th>
+<th align="left">Description</th>
+<th align="left">Takes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Tag</td>
+<td align="left">Does the object that entered the trigger zone have a certain tag?</td>
+<td align="left">Tag</td>
+</tr>
+<tr>
+<td align="left">Name</td>
+<td align="left">Does the object that entered the trigger zone has a certain name?</td>
+<td align="left">String</td>
+</tr>
+<tr>
+<td align="left">Looking At</td>
+<td align="left">Is the player looking at a certain object?</td>
+<td align="left">GameObject</td>
+</tr>
+<tr>
+<td align="left">Pressed</td>
+<td align="left">Has the user pressed a certain key?</td>
+<td align="left"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html">KeyCode String</a></td>
+</tr>
+<tr>
+<td align="left">Script</td>
+<td align="left">Does the player have a certain script component?</td>
+<td align="left">MonoBehaviour</td>
+</tr>
+<tr>
+<td align="left">Is Object</td>
+<td align="left">Is there a certain object in the trigger zone?</td>
+<td align="left">GameObject</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -304,14 +404,28 @@ about every aspect of the tool as well as a Quick-Start guide and a Support sect
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
+          <a href="../doorrotation/" title="Rotations" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Rotations
+              </span>
+            </div>
+          </a>
         
-          <a href="liteversion/" title="Lite Version" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../doordetection/" title="Door Detection" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Lite Version
+                Door Detection
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -341,9 +455,9 @@ about every aspect of the tool as well as a Quick-Start guide and a Support sect
       
     </div>
     
-      <script src="./assets/javascripts/application-8e4952e681.js"></script>
+      <script src="../assets/javascripts/application-8e4952e681.js"></script>
       
-      <script>app.initialize({version:"0.17.1",url:{base:"."}})</script>
+      <script>app.initialize({version:"0.17.1",url:{base:".."}})</script>
       
     
     
